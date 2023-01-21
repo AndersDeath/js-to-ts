@@ -1,13 +1,17 @@
 class Test {
-    constructor() {
-
+    // private isPalindrome = false;
+    private word = '';
+    constructor(word: string) {
+       this.word = word;
     }
 
-    public run() {
-        console.log('test')
+    public check() {
+        const arr = this.word.toLocaleLowerCase().split('').reverse();
+        return (arr.join('') === this.word.toLocaleLowerCase());
     }
 }
 
 
-const test = new Test();
-test.run();
+const palindrome = new Test("Anna");
+const isPalindrome = palindrome.check();
+console.log(isPalindrome)
