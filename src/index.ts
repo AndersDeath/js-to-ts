@@ -1,5 +1,4 @@
 class Test {
-    // private isPalindrome = false;
     private word = '';
     constructor(word: string) {
        this.word = word;
