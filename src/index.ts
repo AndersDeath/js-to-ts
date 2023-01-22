@@ -1,4 +1,4 @@
-class Test {
+class Palindrome {
     private word = '';
     constructor(word: string) {
        this.word = word;
@@ -15,7 +15,7 @@ class Test {
 }
 
 
-const palindrome = new Test("Anna");
+const palindrome = new Palindrome("Anna");
 const isPalindrome = palindrome.check();
 console.log(isPalindrome);
 const wordLength = palindrome.length();
